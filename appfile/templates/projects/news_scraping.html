@@ -1,0 +1,42 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="project-container">
+    <div class="project-header">
+        <h1>News Scraping</h1>
+        <p class="subtitle">
+            Headline Categorization 
+        </p>
+    </div>
+    <div class="project-content">
+        <div class="project-text">
+                <p>
+                    This project takes the headlines of <a href="https://www.protothema.gr/" class="project-titles">Proto Thema</a>
+                    and categorize it to positive , negative and neutral and saves it as json form 
+                </p>
+                <a href="https://github.com/Damianzoub/News_Scraping" target="_blank" class="btn-link">GitHub Repository →</a>
+        </div>
+    </div>
+   
+</div>
+<div class="project-details">
+    <h2>Project Overview</h2>
+    <p>
+        This python script takes the headlines of the greek News Site <a href="https://www.protothema.gr/" class="project-titles">Proto Thema</a>
+        translates the headlines to english and after it categorize the headlines
+        to:
+        <ul>
+            <li>Positive</li>
+            <li>Negative</li>
+            <li>Neutral</li>
+        </ul>
+        and saves it in json format
+    </p>
+    <h2>Technologies Used</h2>
+    <ul>
+        <li><strong>Requests</strong></li>
+        <li><strong>bs4</strong></li>
+        <li><strong>textblob</strong></li>
+        <li><strong>goolgetrans</strong></li>
+    </ul>
+</div>
+{%endblock content%}

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="project-container">
+    <div class="project-header">
+        <h1>Vertex Cover</h1>
+        <p class="subtitle">Quantum Computing in NP problems</p>
+    </div>
+
+    <div class="project-content">
+        <div class="project-text">
+            <p>
+                This project explores the application of quantum computing techniques to NP-hard problems.
+                The main focus is on leveraging quantum optimization algorithms to find solutions efficiently.
+            </p>
+            <h3>Methodologies Used:</h3>
+            <ul>
+                <li>Brute-force Implementation.</li>
+                <li>Local QAOA Implementation.</li>
+                <li>Cloud QAOA Implementation.</li>
+            </ul>
+            <a href="https://github.com/Damianzoub/Vertex-Cover-" class="btn-link" target="_blank">GitHub Repository →</a>
+        </div>
+       
+    </div>
+   
+</div>
+<div class="project-details">
+    <h2>Project Overview</h2>
+    <p>
+        This project aims to solve the **Vertex Cover problem** using quantum computing. 
+        The Vertex Cover problem is a well-known **NP-complete problem** in graph theory, 
+        which has applications in network security, bioinformatics, and logistics.
+    </p>
+    <h2>Technologies Used</h2>
+    <ul>
+        <li><strong>Numpy</strong></li>
+        <li><strong>Networkx</strong></li>
+        <li><strong>Matplotlib</strong></li>
+        <li><strong>Pennylane</strong></li>
+        <li><strong>Dwave-ocean-sdk</strong></li>
+        <li><strong>openqaoa</strong></li>
+    </ul>
+    <h2>Challenges & Solutions</h2>
+    <p>
+       <ul> 
+            <li>Brute-Force Solver – Guarantees the best solution but scales poorly.</li>
+            <li>Local QAOA Simulator – Provides approximate solutions but struggles with larger graphs.</li>
+            <li>Cloud-Based QAOA (D-Wave Leap) – A scalable quantum solution with impressive speed.</li>
+       </ul>
+    </p>
+   <h2> Key Insights</h2>
+   <ul>
+        <li>Brute-Force vs. QAOA: Brute-force found the exact minimum vertex cover, while QAOA produced a slightly larger but computationally efficient solution.</li>
+        <li>Scalability: Brute-force failed for large graphs (took 7+ hours), whereas Cloud QAOA solved 10 large graphs (50 nodes each) in just 15 minutes!</li>
+        <li>Quantum in the Cloud: While quantum computing is still evolving, cloud-based quantum optimization proves to be a game-changer for tackling NP-hard problems.</li>
+    </ul>
+</div>
+{% endblock content %}

@@ -1,0 +1,35 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="project-container">
+    <div class="project-header">
+        <h1>Weather Notifier</h1>
+        <p class="subtitle">
+            Python script for Weather data
+        </p>
+    </div>
+    <div class="project-content">
+        <div class="project-text">
+                <p>
+                    This project was created to take weather data from a weather website using it's API and return information about 
+                    the place 
+                </p>
+                <a href="https://github.com/Damianzoub/weather_notifier" class="btn-link" target="_blank">GitHub Repository →</a>
+        </div>
+    </div>
+    
+</div>
+<div class="project-details">
+    <h2>Script Overview</h2>
+    <p>
+        This Python script fetches current weather data for a specified location,
+        displays it as a desktop notification every hour, 
+        and includes information such as temperature, pressure, and sunrise/sunset times.
+    </p>
+    <h2>Features</h2>
+    <ul>
+        <li><strong>requests</strong></li>
+        <li><strong>plyer</strong></li>
+        <li><strong>dotenv</strong></li>
+    </ul>
+</div>
+{%endblock content%}

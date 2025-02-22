@@ -1,0 +1,52 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="project-container">
+    <div class="project-header">
+        <h1>Blog Site</h1>
+        <p class="subtitle">Website Using Flask</p>
+    </div>
+    <div class="project-content">
+        <div class="project-text">
+                <p>
+                    This project is a simple blog site that helped me learn 
+                    the use of flask in backend development while also practicing my HTML , CSS
+                </p>
+                <a href="https://github.com/Damianzoub/Blog_Site" target="_blank" class="btn-link">GitHub Repository →</a>
+        </div>
+    </div>
+    
+</div>
+<div class="project-details">
+    <h2>Project Overview</h2>
+    <p>
+        Flask Blog is a simple yet powerful blog application built using Flask, 
+        featuring essential functionalities such as user authentication, 
+        post management, and database integration. 
+        This project is designed to demonstrate how to build a web application with 
+        Flask while implementing security best practices and database management using SQLAlchemy.
+    </p>
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>User Authentication</strong>- Secure user login and registration system</li>
+        <li><strong>Post Management</strong>- Users can create, edit and delete their blog posts</li>
+        <li><strong>Database Integration</strong>- Stores Blog posts and user information using SQLAlchemy</li>
+        <li><strong>Secure Enviroment Variables</strong>- Protects sensitive data with .env variables</li>
+        <li><strong>bootstrap for UI</strong>- Provides a simple and clean front-end design</li>
+    </ul>
+    <h2>Technologies Used</h2>
+    <ul>
+        <li><strong>Flask</strong>A Lightweight web framework for Python</li>
+        <li><strong>Flask-WTF</strong>Secure form handling</li>
+        <li><strong>Flask-Login</strong>User authentication and session management</li>
+        <li><strong>SQLAlchemy</strong>ORM for database management</li>
+        <li><strong>SQLite</strong>- Lightweight database for storing users and posts</li>
+        <li><strong>bootstrap</strong>- Responsive front-end design</li>
+    </ul>
+    <h2>Challenges & Solutions</h2>
+    <ul>
+        <li><strong>User Authentication & Security</strong>- Implemented Flask-Login and secure password hashing</li>
+        <li><strong>Database Management</strong>- Used SQLAlchemy ORM to simplify interactions with the database</li>
+        <li><strong>Form Validation</strong>- Used Flask-WTF for handling user input safely</li>
+    </ul>
+</div>
+{%endblock content%}

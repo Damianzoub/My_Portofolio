@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mt-5 blog-container" >
+    <h1 class="text-center mb-4">Blog</h1>
+    <p class="text-center">A collection of my thoughts, experiences, and technical explorations.</p>
+    <div class="row">
+        {% for post in posts.items %}
+            <div class="col-md-6 mb-4 text-center">
+                <div class="card h-100 shadow-sm" style="background-color: black;" >
+                    <div class="card-body">
+                        <h3>
+                            <a class="project-titles" href="{{ url_for('routes_main.blog_post', post_id=post.id) }}">
+                                <b>{{ post.title }}</b>
+                            </a>
+                        </h3>
+                        <p class="card-text text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</p>
+                        <p class="card-text">{{ post.content[:150] }}...</p>
+                        <a class="project-titles" href="{{ url_for('routes_main.blog_post', post_id=post.id) }}">Read More -></a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,62 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="words-about-me ">
+    <h2><b><em>I make Data Analysis , Machine learning , Web-Scraping and now web applications</b></em></h2>
+    <p>   
+      I create data-driven solutions, automate workflows, and develop intelligent web applications to turn complex problems into simple solutions.
+    </p>
+    <a href="{{url_for('routes_main.projects')}}" class="personal-projects">My Projects</a>
+    <a href="{{url_for('routes_main.contact')}}" class="contact-me">Contact Me</a>
+</div>
+<div class="Education-container">
+  <div class="Education">
+    <p style="color: gray;"><em>About me</em></p>
+    <h3>My Education & More</h3>
+  </div>
+  <div class="col-md-6 about-me">
+      <p>
+        I'm a 21 y/o student based in Greece.Always passionate about IT,AI and ML, 
+        I have developed several projects in the AI & ML field , data analysis , web scraping & text analysis and some websites
+        I'm also fond of reading books and learning new things everyday
+      </p>
+      <div>
+        <h4>Education</h4>
+        <p>Currently studying at the University of Piraeus at the field of Digital Systems and I'm expected to graduate in the year:2027</p>
+    </div>
+    <a href="{{url_for('routes_main.about')}}" class="View-More">View More</a>
+    <a href="{{url_for('routes_main.blog')}}" class="Blog">Blog</a>
+  </div>
+</div>
+<div class="project-about">
+  <div class="project-header">
+      <p style="color:gray;"><em>Projects</em></p>
+      <h2>My Personal Projects that i have created</h2>
+  </div>
+  <div class="col-md-6 project">
+    <p>
+        I've worked on projects in data analysis, machine learning,
+        web scraping, and web development. These include building data-driven solutions, 
+        developing machine learning models, creating efficient web scraping tools, 
+        and designing user-friendly web applications. My projects combine technical expertise and 
+        creative problem-solving to deliver impactful results.
+    </p>
+    <a href="{{url_for('routes_main.projects')}}" class="My-Projects">My Projects</a>
+  </div>
+</div>
+<div class="blog-home">
+  <div class="blog-header">
+    <p style="color:gray"><em>Blog</em></p>
+    <h2>My Blog</h2>
+  </div>
+  <div class="col-md-6 blog-info">
+    <p>
+      I've created a personal blog where I share my thoughts, experiences, and insights on various aspects of daily life. 
+      From personal growth and productivity tips to technology, creativity, and everyday challenges, 
+      I write about the things that inspire me and keep me curious. My blog is a space for reflection, 
+      learning, and sharing ideas—whether it’s a new skill I’m exploring, an interesting perspective on life, 
+      or simple moments that make a difference.
+    </p>
+    <a href="{{url_for('routes_main.blog')}}" class="My-Personal-Blog">My Blogs</a>
+  </div>
+</div>
+{%endblock content%}

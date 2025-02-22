@@ -1,0 +1,20 @@
+{%extends "layout.html"%}
+{%block content%}
+ <div class="login-admin">
+    <legend>{{legend}}</legend>
+    <form method="POST" action="" class="form-group">
+        {{form.hidden_tag()}}
+        <div class="form-group">
+            {{form.email.label}}
+            {{form.email(class='form-control form-control-lg' + ('is-invalid' if form.email.errors else ''), placeholder='Enter your email')}}
+        </div>
+        <div class="form-group">
+            {{form.password.label}}
+            {{form.password(class='form-control form-control-lg' + ('is-invalid' if form.password.errors else '') ,placeholder='Enter your password')}}
+        </div>
+        <div class="form-group " id="submit-area" style="margin-top: 20px;">
+            {{ form.submit(label='Send Message', class='btn btn-submit btn-lg') }}
+        </div>
+    </form>
+ </div>
+{%endblock content%}

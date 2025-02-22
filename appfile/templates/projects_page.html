@@ -1,0 +1,45 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="words-about-me">
+    <h2>My Projects</h2>
+    <p>
+        A showcase of my work in data analysis, machine learning, web scraping, 
+        and web development—where technical expertise meets creative problem-solving 
+        to deliver impactful solutions.
+    </p>
+
+<div class="row Projects-container">
+    <div class="col-md-6 mb-4 text-center">
+        <h3><a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='vertex_cover')}}"><b>Vertex Cover</b></a></h3>
+        <p>Solving the Vertex Cover Problem with Quantum Optimization.This project highlights the power and potential of quantum computing in solving combinatorial optimization problems faster than classical approaches.
+        </p>
+        <a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='vertex_cover')}}">View Project -></a>
+    </div>
+
+    <div class="col-md-6 mb-4 text-center">
+        
+        <h3><a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='blog_site')}}"><b>Blog Site</b></a></h3>
+        <p>A simple blog site created using pythons flask library,HTML,CSS</p>
+        <a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='blog_site')}}">View Project -></a>
+    </div>
+    <div class="col-md-6 mb-4 text-center">
+        
+        <h3><a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='weather_notifier')}}"><b>weather notifier</b></a></h3>
+        <p>A simple Python script that fetches data from a weather API to provide information about a location I specify.</p>
+        <a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='weather_notifier')}}">View Project -></a>
+    </div>
+    <div class="col-md-6 mb-4 text-center">
+        
+        <h3><a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='news_scraping')}}"><b>News Scraping</b></a></h3>
+        <p>A simple Python script that gets the headlines of a famous greek News site and does categorize headlines from good,bad,neutral </p>
+        <a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='news_scraping')}}">View Project -></a>
+    </div>
+    <div class='col-md-6 mb-4 text-center'>
+        
+        <h3><a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='e_commerce')}}"><b>E Commerce</b></a></h3>
+        <p>Created a Jupyter notebook that demonstrates how to connect to a database using Python and perform data analysis and data manipulation.</p>
+        <a class="project-titles" href="{{url_for('routes_main.project_detail',project_name='e_commerce')}}">View Project -></a>
+    </div>
+</div>
+</div>
+{%endblock content%}
